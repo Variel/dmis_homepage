@@ -291,3 +291,171 @@ footer {
     padding: 21px 34px;
     border-radius: 33px;
 }
+
+
+/*********
+ PAGE ABOUT
+ *********/
+
+.page-about {
+}
+
+.page-about .hero {
+    padding-top: 68px;
+    padding-bottom: 83px;
+    background: #293e63;
+    text-align: center;
+}
+
+.page-about .hero h1 {
+    overflow: hidden;
+
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 53px;
+    color: #ffcc00;
+}
+
+.page-about .hero .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+.page-about .hero .paragraph .quote-left {
+    display: block;
+    float: left;
+    margin-right: 22px;
+
+    font-size: 60px;
+    color: #ffcc00;
+}
+
+.page-about .hero .paragraph .quote-right {
+    display: block;
+    float: right;
+    margin-left: 21px;
+
+    font-size: 60px;
+    color: #ffcc00;
+}
+
+.page-about .hero .paragraph-content {
+    overflow: hidden;
+}
+
+.page-about .section {
+    padding-top: 64px;
+    padding-bottom: 87px;
+    overflow: hidden;
+}
+
+.page-about .section-light {
+    background: #354e7a;
+}
+
+.page-about .section-dark {
+    background: #293e63;
+}
+
+.page-about .section .section-title {
+    width: 200px;
+    float: left;
+    margin-top: -7px;
+    margin-right: 40px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.page-about .section .section-content {
+    float: left;
+}
+
+.page-about .section-award .award-list {
+    list-style: none;
+    margin: -5px;
+    padding: 0;
+    width: 810px;
+    overflow: hidden;
+}
+
+.page-about .section-award .award-list li {
+    width: 260px;
+    height: 200px;
+    margin: 5px;
+    float: left;
+
+    text-align: center;
+    padding: 57px 25px 56px;
+}
+
+.page-about .section-award .award-list li .title {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffcc00;
+    margin-bottom: 8px;
+}
+
+.page-about .section-award .award-list li .name,
+.page-about .section-award .award-list li .award{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.page-about .section-award .award-list li:nth-child(1),
+.page-about .section-award .award-list li:nth-child(1) .title {
+    color: #293e63;
+}
+
+.page-about .section-projects .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+}
+
+.page-about .section-projects .project-list li {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.page-about .section-projects .project-list li:before {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 13px;
+    content: ' ';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #ffcc00;
+    margin-top: 3px;
+    margin-right: 11px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.page-about .section-contact .title {
+    margin-bottom: 27px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffcc00;
+}
+
+.page-about .section-contact .content {
+    margin-bottom: 63px;
+}
+
+.page-about .section-contact .content p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
