@@ -1,4 +1,9 @@
 <!doctype html>
+@php
+if (!isset($url)) {
+    $url = '';
+}
+@endphp
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,10 +18,10 @@
     <body>
         <div class="topbar">
             <div class="container">
-                <img class="logo" src="/img/logo.png"/>
+                <a href="/"><img class="logo" src="/img/logo.png"/></a>
                 <ul class="menu">
                     <li><a href="#">About</a></li>
-                    <li><a href="#">People</a></li>
+                    <li class="{{$url === 'people' ? 'active' : ''}}"><a href="/people">People</a></li>
                     <li><a href="#">Research</a></li>
                     <li><a href="#">Publications</a></li>
                     <li><a href="#">Seminar</a></li>

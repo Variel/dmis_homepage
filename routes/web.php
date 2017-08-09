@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/people', function () {
+    return view('people', ['url' => 'people']);
+});

@@ -58,16 +58,22 @@ body, html {
 
 .topbar ul.menu li {
     float: left;
+    padding: 0 12px;
 }
 
 .topbar ul.menu li a {
     display: block;
-    padding: 10px 12px;
+    padding: 10px 0 6px 0;
     font-size: 16px;
     line-height: 1;
 
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.topbar ul.menu li.active a {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
 }
 
 footer {
@@ -290,4 +296,112 @@ footer {
 
     padding: 21px 34px;
     border-radius: 33px;
+}
+
+
+
+/*********
+ PAGE PEOPLE
+ *********/
+
+.page-people {
+    background: #293e63;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.page-people .section {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.page-people .section .section-title {
+    float: left;
+    width: 230px;
+    margin-top: -7px;
+    margin-right: 30px;
+
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.47;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.page-people .section .section-content {
+    overflow: hidden;
+}
+
+.page-people .section .section-content .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.page-people .section .person-info {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.page-people .section .color-overlay {
+    position: absolute;
+    background: #293e63;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.page-people .section .text-overlay {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+
+    text-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.page-people .section .text-overlay .name {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.page-people .section .text-overlay .detail {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.page-people .section .person-profile {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 380px;
+    height: 380px;
+    padding-left: 5px;
+}
+
+.page-people .section .profile-section-title {
+    color: #ffcc00;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.page-people .section .profile-section-content {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 27px;
 }
