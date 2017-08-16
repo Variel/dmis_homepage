@@ -26,3 +26,7 @@ Route::get('/people', function () {
 Route::get('/research', function () {
     return view('research', ['url' => 'research']);
 });
+
+Route::get('/publications', function () {
+    return view('publications', ['url' => 'publications']);
+});

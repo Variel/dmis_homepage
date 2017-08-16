@@ -623,3 +623,94 @@ footer {
     font-size: 16px;
     line-height: 26px;
 }
+
+
+/*********
+ PAGE PUBS
+ *********/
+
+.page-pubs {
+    padding-top: 57px;
+    padding-bottom: 63px;
+    background: #293e63;
+}
+
+.page-pubs:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.page-pubs .side {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+.page-pubs .side li {
+    padding-left: 16px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1;
+}
+
+.page-pubs .side li.active {
+    padding-left: 13px;
+    border-left: 3px solid #ffcc00;
+    color: #ffcc00;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.page-pubs .content {
+    background: #354e7a;
+    padding: 43px 54px 60px;
+    overflow: hidden;
+}
+
+.page-pubs .content h2 {
+    margin: 0 0 42px;
+    line-height: 30px;
+    font-size: 26px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.page-pubs .content .timeline .item:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.page-pubs .content .timeline .item .year {
+    float: left;
+    width: 40px;
+    padding-right: 10px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.page-pubs .content .timeline .item .item-detail {
+    border-left: 1px solid #90a6cd;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.page-pubs .content .timeline .item .item-detail h4 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.page-pubs .content .timeline .item .item-detail p {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    color: #a7bbde;
+}

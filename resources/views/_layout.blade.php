@@ -23,7 +23,7 @@ if (!isset($url)) {
                     <li class="{{$url === 'about' ? 'active' : ''}}"><a href="/about">About</a></li>
                     <li class="{{$url === 'people' ? 'active' : ''}}"><a href="/people">People</a></li>
                     <li class="{{$url === 'research' ? 'active' : ''}}"><a href="/research">Research</a></li>
-                    <li><a href="#">Publications</a></li>
+                    <li class="{{$url === 'publications' ? 'active' : ''}}"><a href="/publications">Publications</a></li>
                     <li><a href="#">Seminar</a></li>
                     <li><a href="#">Course</a></li>
                     <li><a href="#">Alumni</a></li>
