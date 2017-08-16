@@ -324,7 +324,7 @@ footer {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.47;
-    color: rgba(0, 0, 0, 0.4);
+    color: #ffcc00;
 }
 
 .page-people .section .section-content {
@@ -478,7 +478,7 @@ footer {
     float: left;
     margin-top: -7px;
     margin-right: 40px;
-    color: rgba(0, 0, 0, 0.4);
+    color: #ffcc00;
     font-size: 30px;
     font-weight: 800;
     line-height: 44px;
@@ -572,4 +572,54 @@ footer {
     line-height: 28px;
     margin-top: 0;
     margin-bottom: 17px;
+}
+
+
+
+/*********
+ PAGE RESEARCH
+ *********/
+
+.page-research {
+}
+
+.page-research .section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    overflow: hidden;
+}
+
+.page-research .section-light {
+    background: #354e7a;
+}
+
+.page-research .section-dark {
+    background: #293e63;
+}
+
+.page-research .section-icon {
+    margin-right: 40px;
+    float: left;
+}
+
+.page-research .section-icon img {
+    width: 190px;
+}
+
+.page-research .section-content {
+    overflow: hidden;
+}
+
+.page-research .section-content h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.page-research .section-content p {
+    font-size: 16px;
+    line-height: 26px;
 }

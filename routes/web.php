@@ -16,9 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', ['url' => 'about']);
 });
 
 Route::get('/people', function () {
     return view('people', ['url' => 'people']);
+});
+
+Route::get('/research', function () {
+    return view('research', ['url' => 'research']);
 });
