@@ -30,3 +30,15 @@ Route::get('/research', function () {
 Route::get('/publications', function () {
     return view('publications', ['url' => 'publications']);
 });
+
+Route::get('/seminar', function () {
+    return view('seminar', ['url' => 'seminar']);
+});
+
+Route::get('/course', function () {
+    return view('course', ['url' => 'course']);
+});
+
+Route::get('/alumni', function () {
+    return view('alumni', ['url' => 'alumni']);
+});
