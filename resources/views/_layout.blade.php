@@ -21,7 +21,7 @@ if (!isset($url)) {
                 <a href="/"><img class="logo" src="/img/logo.png"/></a>
                 <ul class="menu">
                     <li class="{{$url === 'about' ? 'active' : ''}}"><a href="/about">About</a></li>
-                    <li class="{{$url === 'people' ? 'active' : ''}}"><a href="/people">People</a></li>
+                    <li class="{{$url === 'people' ? 'active' : ''}}"><a href="/people">사람들</a></li>
                     <li class="{{$url === 'research' ? 'active' : ''}}"><a href="/research">Research</a></li>
                     <li class="{{$url === 'publications' ? 'active' : ''}}"><a href="/publications">Publications</a></li>
                     <li class="{{$url === 'seminar' ? 'active' : ''}}"><a href="/seminar">Seminar</a></li>
