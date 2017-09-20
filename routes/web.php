@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ['url' => 'home']);
 });
 
 Route::get('/about', function () {
@@ -41,4 +41,8 @@ Route::get('/course', function () {
 
 Route::get('/alumni', function () {
     return view('alumni', ['url' => 'alumni']);
+});
+
+Route::get('/news', function () {
+    return view('news', ['url' => 'news']);
 });

@@ -212,9 +212,12 @@ footer {
 }
 
 .page-home .news .news-list {
+    position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    height: 175px;
 
     border-top: 1px solid #bbbbbb;
 
@@ -955,4 +958,21 @@ footer {
     line-height: 25px;
     margin-top: 0;
     margin-bottom: 23px;
+}
+
+
+/*********
+ PAGE NEWS
+ *********/
+
+.page-news {
+    padding-top: 57px;
+    padding-bottom: 63px;
+    background: #293e63;
+}
+
+.page-news .content {
+    background: #354e7a;
+    padding: 43px 54px 60px;
+    overflow: hidden;
 }

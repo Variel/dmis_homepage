@@ -82,7 +82,7 @@
         </div>
         <div class="section section-dark section-contact">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title" id="contact">
                     Contact
                 </div>
                 <div class="section-content">
