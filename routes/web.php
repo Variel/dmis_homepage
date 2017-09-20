@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,6 +44,7 @@ Route::get('/alumni', function () {
     return view('alumni', ['url' => 'alumni']);
 });
 
-Route::get('/news', function () {
-    return view('news', ['url' => 'news']);
+Route::get('/news', function (\Illuminate\Http\Request $req) {
+    $id = $req->input('id');
+    return view("news.$id", ['url' => 'news']);
 });

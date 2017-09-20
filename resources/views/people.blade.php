@@ -9,7 +9,7 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="person-info" style="background-image: url(//lorempixel.com/400/400)">
+                        <div class="person-info big" style="background-image: url(//lorempixel.com/400/400)">
                             <div class="color-overlay"></div>
                             <div class="text-overlay">
                                 <div class="name">

@@ -32,11 +32,11 @@
                     <div class="news-section">
                         <label class="news-category">DMIS in Media</label>
                         <ul class="news-list" id="news-list">
-                            <li><a href="#"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
-                            <li><a href="#"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암 text text 치료에 새 희망 쏘다.</a></li>
-                            <li><a href="#"><strong>[Nov. 2016]</strong> 고려대학교 강재우 text 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
-                            <li><a href="#"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
-                            <li><a href="#"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
+                            <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
+                            <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암 text text 치료에 새 희망 쏘다.</a></li>
+                            <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 text 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
+                            <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
+                            <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
                         </ul>
                     </div>
                     <div class="news-section">
