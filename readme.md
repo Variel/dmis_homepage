@@ -55,3 +55,19 @@
 
     7.2. `$ php artisan key:generate`
 
+8. News 삽입
+
+    8.1. `[설치경로]/resources/views/news/` 아래에 `news01.blade.php`를 복사해서 새로운 파일 생성 (`[고유ID].blade.php` 형식)
+    
+    8.2. `@section('news-title', '[제목 삽입]')`
+    
+    8.3. `@section('news-content')` 부터 `@endsection` 사이에 HTML 형식으로 기사 내용 추가
+    
+    8.4. `[설치경로]/resources/views/home.blade.php` 파일을 열어 아래와 같이 내용 추가
+    
+```
+<ul class="news-list" id="news-list">
+    <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
+    <li><a href="/news?id=[고유ID]"><strong>[원하는 날짜]</strong> [원하는 제목]</a></li>
+
+```
