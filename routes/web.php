@@ -1,5 +1,7 @@
 <?php
 
+use App\Person;
+use App\Publication;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +23,8 @@ Route::get('/about', function () {
 });
 
 Route::get('/people', function () {
-    return view('people', ['url' => 'people']);
+    $grades = Person::all()->groupBy('grade');
+    return view('people', ['url' => 'people', 'grades' => $grades]);
 });
 
 Route::get('/research', function () {
@@ -29,7 +32,8 @@ Route::get('/research', function () {
 });
 
 Route::get('/publications', function () {
-    return view('publications', ['url' => 'publications']);
+    $publications = Publication::all();
+    return view('publications', ['url' => 'publications', 'pubs' => $publications]);
 });
 
 Route::get('/seminar', function () {

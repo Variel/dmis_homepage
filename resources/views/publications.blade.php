@@ -29,163 +29,34 @@
 @endsection
 
 @section('scripts')
+    @php
+        $categories = $pubs->groupBy('type');
+    @endphp
     <script src="https://unpkg.com/vue"></script>
     <script>
         var page = new Vue({
             el: '#page-pubs',
             data: {
                 publications: {
-                    'Representative Papers': {
-                        2017: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2016: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2015: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    },
-                    'International Conference': {
-                        2017: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    },
-                    'Domestic Conference': {
-                        2016: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2015: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    },
-                    'Domestic Journal': {
-                        2017: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2015: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    },
-                    'Patents': {
-                        2017: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2016: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2015: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    },
-                    'Others': {
-                        2017: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2016: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }, {
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                        2015: [{
-                            type: 'International Conference',
-                            title: 'Fast and Scalable Distributed Boolean Tensor Factorization',
-                            author: 'Namyong Park, Sejoon Oh, and U Kang',
-                            conference: '33rd IEEE International Conference on Data Engineering (ICDE) 2017, San Diego, CA, USA.'
-                        }],
-                    }
+                    @foreach($categories as $category => $pubList)
+                        '{{ $category }}': {
+                            @php
+                                $yearGroup = $pubList->groupBy('year');
+                            @endphp
+                            @foreach($yearGroup as $year => $yearPubList)
+                                '{{ $year }}': [
+                                    @foreach($yearPubList as $pub)
+                                        {
+                                            type: '{{ $pub->detailType }}',
+                                            title: '{{ $pub->title }}',
+                                            author: '{{ $pub->authors }}',
+                                            conference: '{{ $pub->journal }}'
+                                        },
+                                    @endforeach
+                                ],
+                            @endforeach
+                        },
+                    @endforeach
                 },
                 selectedCategory: null,
                 selectedPubs: null

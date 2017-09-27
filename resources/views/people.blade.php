@@ -56,175 +56,33 @@
                     </div>
                 </div>
             </div>
-            <div class="section">
-                <div class="section-title">
-                    Administrative<br>
-                    Assistants
-                </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="person-info" style="background-image: url(//lorempixel.com/450/450)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
+            @foreach($grades as $grade => $people)
+                <div class="section">
+                    <div class="section-title">
+                        {{ $grade }}
+                    </div>
+                    <div class="section-content">
+                        <div class="row">
+                            @foreach($people as $person)
+                                <div class="person-info" style="background-image: url({{ $person->imageUrl }})">
+                                    <div class="color-overlay"></div>
+                                    <div class="text-overlay">
+                                        <div class="name">
+                                            {{ $person->name }}
+                                        </div>
+                                        <div class="detail">
+                                            {{ $person->position }}
+                                        </div>
+                                        <div class="detail">
+                                            {{ $person->email }}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/500/500)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section">
-                <div class="section-title">
-                    Ph.D.<br>
-                    Students
-                </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="person-info" style="background-image: url(//lorempixel.com/450/450)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/500/500)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/450/450)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/500/500)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-title">
-                    Master<br>
-                    Students
-                </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="person-info" style="background-image: url(//lorempixel.com/450/450)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/500/500)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/450/450)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person-info" style="background-image: url(//lorempixel.com/500/500)">
-                            <div class="color-overlay"></div>
-                            <div class="text-overlay">
-                                <div class="name">
-                                    Yunyong Yang
-                                </div>
-                                <div class="detail">
-                                    Head Administrative Assistant
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </div>
     </div>

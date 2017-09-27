@@ -1,4 +1,5 @@
 1. apache2 설치 `$ sudo apt-get install apache2`
+
 2. php7 설치
 
     2.1. `$ sudo add-apt-repository ppa:ondrej/php`
@@ -57,7 +58,7 @@
 
 8. News 삽입
 
-    8.1. `[설치경로]/resources/views/news/` 아래에 `news01.blade.php`를 복사해서 새로운 파일 생성 (`[고유ID].blade.php` 형식)
+    8.1. `[설치경로]/resources/views/news/` 아래에 `news01.blade.php`를 복사해서 새로운 파일 생성 (`[고유ID].blade.php` 형식, 고유ID는 임의의 문자)
     
     8.2. `@section('news-title', '[제목 삽입]')`
     
@@ -69,5 +70,45 @@
 <ul class="news-list" id="news-list">
     <li><a href="/news?id=news01"><strong>[Nov. 2016]</strong> 고려대학교 강재우 교수 연구팀, 암치료에 새 희망 쏘다.</a></li>
     <li><a href="/news?id=[고유ID]"><strong>[원하는 날짜]</strong> [원하는 제목]</a></li>
+    ...
+</ul>
 
 ```
+
+9. DB 연동
+
+    9.1. People, Publications 항목은 DB 연동처리 되어있습니다. 아래는 초기 DB 세팅을 하는 과정입니다.
+    
+    9.2. `[설치경로]/.env` 파일을 아래와 같이 수정 (임시 데이터베이스 연결: 추후 실서버 DB 정보로 변경)
+    
+```
+...
+DB_CONNECTION=mysql
+DB_HOST=ap-cdbr-azure-east-a.cloudapp.net
+DB_PORT=3306
+DB_DATABASE=dmis
+DB_USERNAME=b2053901de7b9a
+DB_PASSWORD=c1fa6bb8
+... 
+```
+
+
+    9.3. 실서버일 경우 아래 명령어 실행 (초기 DB 설정: 테이블 생성 등) 
+    
+        9.3.1 `$ cd [설치경로]`
+    
+        9.3.2 `$ php artisan migrate`
+        
+10. Person 추가/수정
+
+    10.1. people 테이블에 자료 입력/수정
+
+    10.2. `grade`열을 기준으로 People 페이지 좌측 노란 글씨 영역이 구분 됨 (철자/대소문자/띄어쓰기 유의)
+    
+11. Publication  추가/수정
+
+    11.1. publications 테이블에 자료 입력/수정
+
+    11.2. `type`열을 기준으로 좌측 카테고리가 구분 됨 (철자/대소문자/띄어쓰기 유의)
+    
+    11.3. `detailType`열이 Publications 페이지의 밝고 흰 글씨 부분에 들어감
