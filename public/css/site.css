@@ -40,7 +40,7 @@ body, html {
 }
 
 .topbar .logo {
-    width: 112px;
+    width: 212px;
     height: 34px;
 }
 
@@ -205,7 +205,7 @@ footer {
     display: block;
 
     color: #ffcc00;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
 
     margin-bottom: 12px;
@@ -347,61 +347,9 @@ footer {
     margin-right: -10px;
 }
 
-.page-people .section .person-info {
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-
-    position: relative;
-    width: 180px;
-    height: 180px;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.page-people .section .person-info.big {
-    width: 380px;
-    height: 380px;
-}
-
-.page-people .section .color-overlay {
-    position: absolute;
-    background: #293e63;
-    opacity: .5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.page-people .section .text-overlay {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    right: 15px;
-
-    text-shadow: 0 0 5px rgba(0,0,0,.2);
-}
-
-.page-people .section .text-overlay .name {
-    font-size: 15px;
-    font-weight: 800;
-}
-
-.page-people .section .text-overlay .detail {
-    font-size: 12px;
-    line-height: 1.75;
-}
-
-.page-people .section .person-info.big .text-overlay .name {
-    font-size: 30px;
-}
-
-.page-people .section .person-info.big .text-overlay .detail {
-    font-size: 16px;
-}
+/*********
+ .person-profile
+ *********/
 
 .page-people .section .person-profile {
     float: left;
@@ -424,11 +372,87 @@ footer {
 
 .page-people .section .profile-section-content {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.75;
     margin-bottom: 27px;
 }
 
+.page-people .section .profile-section-content-small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    line-height: 1.75;
+    margin-bottom: 27px;
+}
+
+.page-people .section .person-info.big {
+    width: 380px;
+    height: 380px;
+}
+
+.page-people .section .person-info.big .text-overlay .name {
+    font-size: 30px;
+}
+
+.page-people .section .person-info.big .text-overlay .title {
+    font-size: 17px;
+}
+
+.page-people .section .person-info.big .text-overlay .detail {
+    font-size: 13px;
+}
+
+
+
+/*********
+ .person-info
+ *********/
+
+.page-people .section .person-info {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.page-people .section .color-overlay {
+    position: absolute;
+    background: #293e63;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.page-people .section .text-overlay {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    text-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.page-people .section .text-overlay .name {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.page-people .section .text-overlay .course {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.page-people .section .text-overlay .detail {
+    font-size: 8px;
+    line-height: 1.5;
+}
 
 /*********
  PAGE ABOUT

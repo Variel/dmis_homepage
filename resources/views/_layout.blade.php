@@ -9,7 +9,7 @@ if (!isset($url)) {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DIMS Laboratory</title>
+        <title>DMIS Lab - Korea University</title>
 
         <!-- Fonts -->
         <link href="//fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@ if (!isset($url)) {
     <body>
         <div class="topbar">
             <div class="container">
-                <a href="/"><img class="logo" src="/img/logo.png"/></a>
+                <a href="/"><img class="logo" src="/img/logo_new.png"/></a>
                 <ul class="menu">
                     <li class="{{$url === 'home' ? 'active' : ''}}"><a href="/">Home</a></li>
                     <li class="{{$url === 'people' ? 'active' : ''}}"><a href="/people">People</a></li>

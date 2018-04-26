@@ -9,21 +9,19 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="person-info big" style="background-image: url(//lorempixel.com/400/400)">
+                        <div class="person-info big" style="background-image: url(/img/people/jaewoo1.jpg)">
                             <div class="color-overlay"></div>
                             <div class="text-overlay">
                                 <div class="name">
-                                    Jaewoo Kang, Ph. D
+                                    Jaewoo Kang, Ph.D
+                                </div>
+                                <div class="title">
+                                    Professor
                                 </div>
                                 <div class="detail">
-                                    Department of Computer Science </br>
-                                    and Radio Engineering Korea University
-                                </div>
-                                <div class="detail">
-                                    hello@korea.ac.kr
-                                </div>
-                                <div class="detail">
-                                    +82-2-123-5678
+                                	Department of Computer Science, Korea University<br>
+                                    kangj AT korea.ac.kr <br>
+                                    +82-2-3290-4840
                                 </div>
                             </div>
                         </div>
@@ -32,25 +30,27 @@
                                 Education
                             </div>
                             <div class="profile-section-content">
-                                Ph.D. in CS, University of Wisconsin–Madison, USA<br>
-                                M.S.. in CS, University of Colorado Boulder, USA<br>
-                                B.S. in CS, Korea University, South Korea<br>
+                                Ph.D., CS, University of Wisconsin-Madison, USA, 2003 <br>
+                                M.S., CS, University of Colorado at Boulder, USA, 1996<br>
+                                B.S., CS, Korea University, Seoul, South Korea, 1994<br>
                             </div>
                             <div class="profile-section-title">
                                 Work Experience
                             </div>
                             <div class="profile-section-content">
-                                Ph.D. in CS, University of Wisconsin–Madison, USA<br>
-                                M.S.. in CS, University of Colorado Boulder, USA<br>
-                                B.S. in CS, Korea University, South Korea<br>
+                            	Associate Professor, North Carolina State University, Raleigh, NC, USA (2003-2006)<br>
+                                CTO and Founder, WISEngine Inc., 2000
                             </div>
                             <div class="profile-section-title">
                                 Other Affiliations
                             </div>
-                            <div class="profile-section-content">
-                                Ph.D. in CS, University of Wisconsin–Madison, USA<br>
-                                M.S.. in CS, University of Colorado Boulder, USA<br>
-                                B.S. in CS, Korea University, South Korea<br>
+                            <div class="profile-section-content-small">
+                                Dept. Head, Interdisciplinary Graduate Program in Bioinformatics <br>
+                                P.I., BK21PLUS Big Data Scientist Human Resource Development Project <br>
+                                Member, ACM and IEEE <br>
+                                Editor and Program Committee, International journals and conferences including Journal of Computer Science and Engineering, IEEE ICDE, AAAI, ACM JCDL, DASFAA, ACM SIGMOD etc.
+
+
                             </div>
                         </div>
                     </div>
@@ -67,14 +67,17 @@
                                 <div class="person-info" style="background-image: url({{ $person->imageUrl }})">
                                     <div class="color-overlay"></div>
                                     <div class="text-overlay">
+                                        <div class="detail">
+                                            <center><i>{{ $person->saying }}</i></center>
+                                        </div>
                                         <div class="name">
                                             {{ $person->name }}
                                         </div>
                                         <div class="detail">
-                                            {{ $person->position }}
+                                            {{ $person->position1 }}
                                         </div>
                                         <div class="detail">
-                                            {{ $person->email }}
+                                            {{ $person->position2 }}
                                         </div>
                                     </div>
                                 </div>

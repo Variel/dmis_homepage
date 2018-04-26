@@ -18,11 +18,11 @@
         <div class="section section-light">
             <div class="container">
                 <div class="section-title">
-                    Organization<br>
-                    Chart
+                    DMIS<br>
+                    Faces
                 </div>
                 <div class="section-content">
-                    <img src="//lorempixel.com/800/355" alt=""/>
+                    <img src="/img/prize.jpg" alt=""/>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                             Seongbuk-gu, Seoul, Republic of Korea 02841(136-713)<br>
                             Tel. +82-2-3290-3566
                         </p>
-                        <img src="//lorempixel.com/800/332" alt="">
+                        <img src="/img/dmis_map.png" alt="">
                     </div>
                     <div class="title">
                         Student Office #2

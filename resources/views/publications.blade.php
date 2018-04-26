@@ -13,11 +13,12 @@
                         <div class="year" v-text="year"></div>
                         <div class="item-detail">
                             <div v-for="item in items">
-                                <h4 v-text="item.type"></h4>
+                                <h4 v-text="item.title"></h4>
                                 <p>
-                                    @{{ item.title }}<br>
-                                    @{{ item.author }}<br>
-                                    @{{ item.conference }}
+                                    <i><strong>@{{ item.author }}</strong></i><br>
+                                    @{{ item.host }}<br>
+                                    @{{ item.detail1 }}<br>
+                                    @{{ item.detail2 }}
                                 </p>
                             </div>
                         </div>
@@ -47,10 +48,13 @@
                                 '{{ $year }}': [
                                     @foreach($yearPubList as $pub)
                                         {
-                                            type: '{{ $pub->detailType }}',
                                             title: '{{ $pub->title }}',
                                             author: '{{ $pub->authors }}',
-                                            conference: '{{ $pub->journal }}'
+                                            host: '{{ $pub->host }}',
+                                            detail1: '{{ $pub->detail1 }}',
+                                            detail2: '{{ $pub->detail2 }}',
+                                            pdf: '{{ $pub->pdfURL }}',
+                                            link: '{{ $pub->linkURL }}'
                                         },
                                     @endforeach
                                 ],
@@ -68,7 +72,7 @@
                 }
             },
             created: function() {
-                this.changeCategory('Representative Papers');
+                this.changeCategory('0. Representative Papers');
             }
         })
     </script>
